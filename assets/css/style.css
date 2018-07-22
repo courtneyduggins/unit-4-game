@@ -1,0 +1,22 @@
+body {
+    background-image: url(../images/zig-zag-wool.png);
+    background-repeat: repeat;
+   
+}
+
+h1 {
+    color: yellowgreen;
+    text-align: center;
+}
+
+p {
+    color: hotpink;
+}
+
+#goal, #totalScore {
+    color: turquoise;
+}
+
+#wins-losses, #NumberOfWins, #NumberOfLosses {
+    color: azure;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+    <!-- <script src="assets/javascript/game.js"></script> -->
+
+    <title>Unit-4-Game</title>
+</head>
+
+<body>
+
+
+
+    <div>
+        <h1>CrystalsCollector!</h1>
+    </div>
+
+    <div>
+        <p>You wil be given a random number at the start of the game. There are four crystals below. <br>
+            By clicking n a crystal
+            you will add a specific amount of points to your total score. <br> You win the game by matching your total score to
+            random number , you lose the game if your total score goes above the random number.<br> The value of each crystal
+            is hidden from you until you click on it. Each time when the game starts, the game will change the value of each
+            crystal.
+        </p>
+    </div>
+
+    <div id="goal">
+        <h2>Number to match: </h2>
+        39
+    </div>
+
+    <div id="wins-losses">
+        <div id "NumberOfWins">
+            Wins:
+            <br>
+        </div>
+        <div="NumberOfLosses">
+
+            Losses:
+    </div>
+    </div>
+
+    <div class="crystals">
+
+        <button>
+            <img src="assets/images/images.jpg" id="firstjewel"  alt="bejeweled glove_red">
+        </button>
+        <button>
+            <img src="assets/images/images-1.jpg" id="secondjewel" alt="bejeweled rose">
+        </button>
+        <button>
+            <img src="assets/images/images-2.jpg" id="thirdjewel" alt="bejeweled diamonds">
+        </button>
+        <button>
+            <img src="assets/images/images-3.jpg" id="fourthjewel" alt="bejeweled glove_blue">
+        </button>
+    </div>
+
+
+
+    <div id"score">
+        <p>Your score is: </p>
+    </div>
+
+    <div id="totalScore">
+
+        0
+    </div>
+
+    <!--  The player will have to guess the answer, just like in Word Guess. This time, though, the player will guess with numbers instead of letters. 
+Here's how the app works: -->
+
+
+
+    <!-- There will be four crystals displayed as buttons on the page.
+The player will be shown a random number at the start of the game. -->
+
+    <!-- When the player clicks on a crystal, it will add a specific amount of points to the player's total score.  -->
+
+
+    <!-- Your game will hide this amount until the player clicks a crystal.
+When they do click one, update the player's score counter. -->
+
+
+    <!-- The player wins if their total score matches the random number from the beginning of the game.
+The player loses if their score goes above the random number. -->
+
+    <!-- The game restarts whenever the player wins or loses. -->
+
+
+    <!-- When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero. -->
+
+
+    <!-- The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game. -->
+
+
+</body>
+
+</html>
