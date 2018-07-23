@@ -7,14 +7,14 @@ var startingNumber;
 
 $(document).ready(function () {
 
-    $("#NumberOfWins").text("wins: " + wins);
+    $("#NumberOfWins").html("Wins: " + wins);
         console.log(wins);
-    $("#NumberOfLosses").text("losses: " + losses);
+    $("#NumberOfLosses").html("Losses: " + losses);
         console.log(losses);
 
     startingNumber = Math.floor(Math.random() * 120) + 1;
     $("#goal").text(startingNumber);
-    console.log(startingNumber);
+        console.log(startingNumber);
 
     // var new_score;
 
@@ -30,22 +30,26 @@ $(document).ready(function () {
         $("#totalScore").text(score);
 
         if (score === startingNumber) {
-            // wins++;
-            outcomeWin();
+            wins++;
+            $("#wins-losses").prepend("<p>You win!</p>");
+            // outcomeWin();
             reset();
-            // $("#wins-losses").prepend("<p>You win!</p>");
+            
         }
 
-        else (score > startingNumber)
-            outcomeLose();
+        else if (score > startingNumber) {
+            losses++;
+            $("#wins-losses").prepend("<p>You lost!!</p>");
             reset();
-            // losses++;
-            // $("#wins-losses").prepend("<p>You lost!!</p>");
+        }
+        //         outcomeLose();
+
+                
 
     });
 
     var valuePic2 = Math.floor(Math.random() * 12) + 1;
-        console.log("valuePic2= " + valuePic2);
+    console.log("valuePic2= " + valuePic2);
 
     $("#secondjewel").on("click", function () {
 
@@ -53,22 +57,25 @@ $(document).ready(function () {
         $("#totalScore").text(score);
 
         if (score === startingNumber) {
-            // wins++;
-            outcome();
+            wins++;
+            $("#wins-losses").prepend("<p>You win!</p>");
+            //         outcome();
             reset();
-            // $("#wins-losses").prepend("<p>You win!</p>");
+           
         }
 
-        else (score > startingNumber)
-            outcomeLose();
+        else if (score > startingNumber) {
+            losses++;
+            $("#wins-losses").prepend("<p>You lost!!</p>");
             reset();
-            // losses++;
-            // $("#wins-losses").prepend("<p>You lost!!</p>");
+
+        }
+        //         // $("#wins-losses").prepend("<p>You lost!!</p>");
 
     });
 
     var valuePic3 = Math.floor(Math.random() * 12) + 1;
-        console.log("valuePic3= " + valuePic3);
+    console.log("valuePic3= " + valuePic3);
 
     $("#thirdjewel").on("click", function () {
 
@@ -76,22 +83,23 @@ $(document).ready(function () {
         $("#totalScore").text(score);
 
         if (score === startingNumber) {
-            // wins++;
-            outcomeWin();
+            wins++;
+            $("#wins-losses").prepend("<p>You win!</p>");
+            //         outcomeWin();
             reset();
-            // $("#wins-losses").prepend("<p>You win!</p>");
         }
 
-        else (score > startingNumber)
-        outcomeLose();
-        reset();
-            // losses++;
-            // $("#wins-losses").prepend("<p>You lost!!</p>");
+        else if (score > startingNumber) {
+            losses++;
+            $("#wins-losses").prepend("<p>You lost!!</p>");
+            reset();
+            //     outcomeLose();
+        }
 
     });
 
     var valuePic4 = Math.floor(Math.random() * 12) + 1;
-        console.log("valuePic4= " + valuePic4);
+    console.log("valuePic4= " + valuePic4);
 
     $("#fourthjewel").on("click", function () {
 
@@ -99,48 +107,55 @@ $(document).ready(function () {
         $("#totalScore").text(score);
 
         if (score === startingNumber) {
-            // wins++;
-            outcomeWin();
+            wins++;
+            $("#wins-losses").prepend("<p>You win!</p>");
             reset();
-            // $("#wins-losses").prepend("<p>You win!</p>");
+            //     outcomeWin();
+            //     
+
         }
 
-        else (score > startingNumber)
-        outcomeLose();
-        reset();
-            // losses++;
-            // $("#wins-losses").prepend("<p>You lost!!</p>");
-
+        else if (score > startingNumber) {
+            losses++;
+            $("#wins-losses").prepend("<p>You lost!!</p>");
+            reset();
+        }
     });
 
-    function outcomeWin(){
 
-    // if (score === startingNumber) {
-        wins++;
-        $("#wins-losses").prepend("<p>You win!!!</p>");
-        
+    // $(".crystals").each(function(run) {
+
+    //     var
+    // })
+    //     function outcomeWin(){
+
+    //     // if (score === startingNumber) {
+    //         wins++;
+    //         $("#wins-losses").prepend("<p>You win!!!</p>");
+
+    //     };
+
+    //     function outcomeLose(){
+
+    //     // else if (score > startingNumber) {
+    //         losses++;
+    //         $("#wins-losses").prepend("<p>You lost!</p>");
+
+
+    // };
+
+    function reset() {
+        score = 0;
+        $("#totalScore").text(score);
+        startingNumber = Math.floor(Math.random() * 120) + 1;
+        $("#goal").text(startingNumber);
+
+        valuePic1 = Math.floor(Math.random() * 12) + 1;
+        valuePic2 = Math.floor(Math.random() * 12) + 1;
+        valuePic3 = Math.floor(Math.random() * 12) + 1;
+        valuePic4 = Math.floor(Math.random() * 12) + 1;
+
     };
-
-    function outcomeLose(){
-
-    // else if (score > startingNumber) {
-        losses++;
-        $("#wins-losses").prepend("<p>You lost!</p>");
-   
-
-};
-
-function reset(){
-    score = 0;
-    startingNumber = Math.floor(Math.random() * 120) + 1;
-    $("#goal").text(startingNumber);
-
-    valuePic1 = Math.floor(Math.random() * 12) + 1;
-    valuePic2 = Math.floor(Math.random() * 12) + 1;
-    valuePic3 = Math.floor(Math.random() * 12) + 1;
-    valuePic4 = Math.floor(Math.random() * 12) + 1;
-
-}
 
 
     //     $(".crystals").each(function(pics) {

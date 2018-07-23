@@ -1,22 +1,108 @@
 body {
     background-image: url(../images/zig-zag-wool.png);
     background-repeat: repeat;
+    
    
 }
 
 h1 {
     color: yellowgreen;
     text-align: center;
+    background-color: hotpink;
+    /* background: 10px; */
+    margin-right: 800px;
+    /* margin-left: 400px; */
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
 
 p {
     color: hotpink;
+    text-align: center;
+    background-color:lightgray;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    margin-top: 10px;
+    margin-right: 800px;
+    /* margin-left: 400px; */
+    
 }
 
-#goal, #totalScore {
+#score {
+    color: hotpink;
+    background-color:lightgray;
+    /* text-align: center; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 1000px;
+    margin-bottom: 10px;
+}
+
+#goal {
+    color: black;
+    text-align: left;
+    font-size: 30px;
+    
+    /* top: -10px; */
+    background-color: lawngreen;
+    margin-right: 1000px;
+    margin-left: 0px;
+    /* margin-bottom: 50px; */
+    padding: 50px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+}
+
+#totalScore {
     color: turquoise;
 }
 
 #wins-losses, #NumberOfWins, #NumberOfLosses {
     color: azure;
 }
+
+#firstjewel, #secondjewel, #thirdjewel, #fourthjewel {
+    /* margin-top: 10px; */
+    width: 100px;
+    height: 100px;
+   
+}
+
+.crystals {
+    margin-top: 10px;
+}
+
+#wins-losses {
+    background-color: turquoise;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 1100px;
+    /* margin-left: 00px; */
+    /* mbottom: 200px; */
+}
+
+#totalScore {
+
+    color: black;
+    text-align: left;
+    font-size: 30px;
+    
+    /* top: -10px; */
+    background-color: hotpink;
+    margin-right: 1000px;
+    margin-left: 0px;
+    /* margin-bottom: 50px; */
+    padding: 50px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+
+}
+
+
